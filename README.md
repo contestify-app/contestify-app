@@ -10,7 +10,7 @@ Welcome to Contestify, the ultimate productivity tool for competitive programmer
 
 ### Application
 
-- [Contestify App](https://contestify-app.vercel.app)
+- [Contestify App](<https://contestify-app.vercel.app>)
 - [Contestify Extension](/)
 
 ### How It Works
