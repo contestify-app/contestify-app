@@ -2,7 +2,7 @@
 
 ## Contestify
 
-![contestify-banner](contestify-banner.png)
+![contestify-banner]([contestify-banner.png](https://raw.githubusercontent.com/contestify-app/.github/main/profile/contestify-banner.png))
 
 Welcome to Contestify, the ultimate productivity tool for competitive programmers.
 
