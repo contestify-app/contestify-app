@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Contestify",
+    "version": "0.0.1",
+    "description": "Productivity Tool for Competitive Programmers.",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "assets/images/contestify/logo.png"
+    },
+    "icons": {
+        "128": "assets/images/contestify/logo.png",
+        "96": "assets/images/contestify/logo.png",
+        "48": "assets/images/contestify/logo.png",
+        "16": "assets/images/contestify/logo.png"
+    },
+    "permissions": [
+        "activeTab",
+        "notifications",
+        "cookies",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "assets/js/background.js"
+    },
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+1",
+                "mac": "Command+Shift+1"
+            }
+        }
+    }
+}

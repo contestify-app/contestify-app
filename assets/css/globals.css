@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url("./trophy.css");
+
+/* Import fonts */
+@import url("../fonts/geist/style.css");
+@import url("../fonts/Vegawanty/style.css");
+
+:root {
+  --dark: #1a1a1a;
+  --dark-secondary: #282828;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: var(--dark); Use CSS variable directly */
+}
+
+.geist-regular {
+  font-family: 'Geist', sans-serif;
+}
+
+.font-geist {
+  font-family: 'Geist', sans-serif;
+}
+
+.font-vegawanty {
+  font-family: 'Vegawanty', sans-serif;
+}
+
+.geist-ui {
+  font-family: 'walt-disney-ui', sans-serif;
+}
+
+
+
+/* custom css */
+
+.okactive {
+  border-width: 1px;
+  /* border-color: rgb(195, 195, 195) !important;  */
+  background-color: rgb(38 38 38) !important;
+  color: rgb(34 197 94);
+}
+
+
+/* back to top */
+
+.button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(138, 138, 138, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 100px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(70, 70, 70);
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
