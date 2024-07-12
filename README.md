@@ -2,16 +2,29 @@
 
 ## Contestify
 
-![contestify-banner](contestify-banner.png)
+![contestify-banner](https://raw.githubusercontent.com/contestify-app/.github/main/profile/contestify-banner.png)
 
 Welcome to Contestify, the ultimate productivity tool for competitive programmers.
+
+<a href="https://github.com/contestify-app/contestify-app/releases/download/0.0.1/contestify-app.crx" target="_blank">
+  <kbd> <br> Download Contestify Extension <br> </kbd>
+</a>
+
 
 </div>
 
 ### Application
 
-- [Contestify App](https://contestify-app.vercel.app)
-- [Contestify Extension](/)
+- <a href="https://contestify-app.vercel.app" target="_blank">Contestify App</a>
+- <a href="https://github.com/contestify-app/contestify-app/releases/download/0.0.1/contestify-app.crx" target="_blank">Contestify Extension</a>
+
+</br>
+
+<div align="center">
+  
+![Frame 10](https://github.com/contestify-app/contestify-app/assets/120157430/e4cbdcca-1df8-4836-b70f-2a6852cec078)
+</div>
+
 
 ### How It Works
 
