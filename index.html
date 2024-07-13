@@ -30,7 +30,7 @@
 
 <body class="m-0 p-0 box-border bg-[#1a1a1a] text-white">
     <header class="h-14 bg-[#282828] border-b border-[#464646] font-geist">
-        <div class="container mx-auto flex p-2 items-center justify-between">
+        <div class="container mx-auto flex p-2 items-center justify-center xl:justify-between lg:justify-between">
             <div class="flex items-center justify-center gap-2 font-semibold text-2xl text-center">
                 <div>
                     <img class="w-8 h-8 rounded-md" src="assets/images/contestify/logo.png" alt="contestify-logo">
@@ -62,9 +62,8 @@
     </header>
     <main class="container mx-auto">
         <section
-            class="min-h-screen flex flex-col lg:flex-row xl:flex-row sm:flex-col md:flex-row m-4 items-center lg:items-start xl:items-start md:items-start sm:items-center justify-between"
-            id="home">
-            <div
+            class="min-h-screen flex flex-col lg:flex-row xl:flex-row sm:flex-col md:flex-row m-4 items-center lg:items-start xl:items-start md:items-start sm:items-center justify-between">
+            <div id="home1"
                 class="mt-10  lg:mt-20 xl:mt-20 md:mt-20 sm:mt-10 xs:mt-10 items-center text-center lg:text-start xl:text-start md:text-start sm:text-center xs:text-center ">
                 <div class="uppercase my-4 font-medium"><span
                         class="hidden lg:inline xl:inline md:inline sm:hidden xs:hidden">—</span> Increase your</div>
@@ -80,8 +79,9 @@
                             <span class="circle">
                                 <svg viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"
                                     aria-hidden="true" class="icon">
-                                        <path class="group-hover:!fill-green-500 transition-all duration-300 ease-in-out" d="M12 19V5m0 14-4-4m4 4 4-4" stroke-width="1.5" stroke-linejoin="round"
-                                            stroke-linecap="round" stroke="currentColor"></path>
+                                    <path class="group-hover:!fill-green-500 transition-all duration-300 ease-in-out"
+                                        d="M12 19V5m0 14-4-4m4 4 4-4" stroke-width="1.5" stroke-linejoin="round"
+                                        stroke-linecap="round" stroke="currentColor"></path>
                                 </svg>
                                 <div class="square"></div>
                             </span>
@@ -171,7 +171,7 @@
                     </div>
                 </div>
             </div>
-            <div class="p-2 w-[24rem] mt-10 select-none">
+            <div id="home" class="p-2 w-[24rem] mt-14 select-none">
                 <div class="border rounded-md border-[#363636] p-4">
                     <div class="text-lg ">Contests</div>
                     <div class="flex gap-2 items-center text-xs my-1">
@@ -466,62 +466,75 @@
             </div>
         </section>
         <!-- FAQ's section-->
-        <section class="min-h-screen flex flex-col items-center justify-center text-center p-10 bg-[#2a2a2a]" id="faqs">
-            <h1 class="text-3xl">FREQUENTLY ASKED QUESTIONS</h1>
-            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+        <section class="min-h-screen flex flex-col items-center justify-center text-center py-10 bg-[#2a2a2a]" id="faqs">
+            <h1 class="text-4xl font-bold my-8">Frequently Asked Questions</h1>
+            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq1">
                     <p class="font-semibold text-lg">What is the Contestify Extension?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
                 </dt>
-                <dd id="faq1" class="hidden text-lg font-light mt-6 ">Once installed, the Contestify Extension will automatically aggregate contests from supported platforms and display them in a unified list. You can access this list by clicking the Contestify icon in your browser toolbar.</dd>
+                <dd id="faq1" class=" hidden text-lg font-light mt-6 ">Once installed, the Contestify Extension will
+                    automatically aggregate contests from supported platforms and display them in a unified list. You
+                    can access this list by clicking the Contestify icon in your browser toolbar.</dd>
             </div>
-            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq2">
                     <p class="font-semibold text-lg">Can I receive notifications for upcoming contests?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
                 </dt>
-                <dd id="faq2" class="hidden text-lg font-light mt-6 ">Yes! Contestify can send you notifications for upcoming and ongoing contests. You can customize your notification preferences in the extension settings.</dd>
+                <dd id="faq2" class=" hidden text-lg font-light mt-6 ">Yes! Contestify can send you notifications for
+                    upcoming and ongoing contests. You can customize your notification preferences in the extension
+                    settings.</dd>
             </div>
-            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq3">
                     <p class="font-semibold text-lg">How do I access the leaderboards?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
                 </dt>
-                <dd id="faq3" class="hidden text-lg font-light mt-6 ">You can access the leaderboards by clicking on the "Leaderboards" tab within the Contestify Extension. This section will show your ranking and performance across different contests and platforms.</dd>
+                <dd id="faq3" class=" hidden text-lg font-light mt-6 ">You can access the leaderboards by clicking on the
+                    "Leaderboards" tab within the Contestify Extension. This section will show your ranking and
+                    performance across different contests and platforms.</dd>
             </div>
-            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq4">
                     <p class="font-semibold text-lg">How do I subscribe to email updates?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
                 </dt>
-                <dd id="faq4" class="hidden text-lg font-light mt-6 ">To subscribe to email updates, go to the extension settings and enter your email address in the subscription section. You will receive regular emails with contest reminders and updates.</dd>
+                <dd id="faq4" class=" hidden text-lg font-light mt-6 ">To subscribe to email updates, go to the extension
+                    settings and enter your email address in the subscription section. You will receive regular emails
+                    with contest reminders and updates.</dd>
             </div>
-            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq5">
                     <p class="font-semibold text-lg">Is my data secure with Contestify?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
                 </dt>
-                <dd id="faq5" class="hidden text-lg font-light mt-6 ">Absolutely. Contestify prioritizes your privacy and data security. We do not store your personal information or track your browsing activity beyond the functionality required to deliver contest updates and notifications.</dd>
+                <dd id="faq5" class=" hidden text-lg font-light mt-6 ">Absolutely. Contestify prioritizes your privacy
+                    and data security. We do not store your personal information or track your browsing activity beyond
+                    the functionality required to deliver contest updates and notifications.</dd>
             </div>
-            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq6">
                     <p class="font-semibold text-lg">Can I customize the contest notifications?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
                 </dt>
-                <dd id="faq6" class="hidden text-lg font-light mt-6 ">Yes, you can customize the frequency and type of notifications you receive. Go to the extension settings to adjust your notification preferences according to your needs.</dd>
+                <dd id="faq6" class=" hidden text-lg font-light mt-6 ">Yes, you can customize the frequency and type of
+                    notifications you receive. Go to the extension settings to adjust your notification preferences
+                    according to your needs.</dd>
             </div>
-            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq7">
                     <p class="font-semibold text-lg">Is Contestify free to use?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
                 </dt>
-                <dd id="faq7" class="hidden text-lg font-light mt-6 ">Yes, Contestify is free to use. We aim to provide competitive programmers with the best tools to enhance their contest experience.</dd>
+                <dd id="faq7" class=" hidden text-lg font-light mt-6 ">Yes, Contestify is free to use. We aim to provide
+                    competitive programmers with the best tools to enhance their contest experience.</dd>
             </div>
         </section>
-        
+
         <section class="min-h-screen flex flex-col items-center justify-center text-center p-10 bg-[#1a1a1a]"
             id="contact">
-            <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+            <h2 class="text-4xl font-bold mb-4 text-green-500">Contact Us</h2>
             <form action="#" method="POST" class="w-full max-w-lg">
                 <div class="flex flex-wrap mb-6">
                     <div class="w-full px-3">
@@ -579,26 +592,38 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             gsap.from("header", { duration: 1, y: -100, ease: "bounce" });
-            gsap.from("#home div", { duration: 1, opacity: 0, y: 50, stagger: 0.2 });
+            gsap.from("#home1 div", { duration: 1, opacity: 0, y: 50, stagger: 0.2 });
+            gsap.from("#home div", { duration: 0.2, opacity: 0, y: 50, stagger: 0.1 });
             gsap.from("#extension img", { duration: 1, opacity: 0, x: 50, stagger: 0.2 });
             gsap.from("#working ul li", { duration: 1, opacity: 0, y: 50, stagger: 0.2 });
             gsap.from("#contact form", { duration: 1, opacity: 0, y: 50, stagger: 0.2 });
         });
-        
+
     </script>
     <!-- FAQ's script -->
     <script>
         const dtele = document.querySelectorAll('dt');
         dtele.forEach(element => {
-            element.addEventListener('click', ()=>{
+            element.addEventListener('click', () => {
                 const ddID = element.getAttribute('aria-controls');
                 const ddelement = document.getElementById(ddID);
                 const ddarrow = element.querySelectorAll('i')[0];
-                
+
                 ddelement.classList.toggle('hidden');
                 ddarrow.classList.toggle('-rotate-180');
             })
         })
+        function toggleDropdown(element) {
+        const dd = element.nextElementSibling;
+        const icon = element.querySelector('i');
+        
+        dd.classList.toggle('max-h-0');
+        dd.classList.toggle('max-h-96'); // Adjust this value as needed for full height
+        dd.classList.toggle('opacity-0');
+        dd.classList.toggle('opacity-100');
+        
+        icon.classList.toggle('-rotate-180');
+    }
     </script>
 </body>
 
