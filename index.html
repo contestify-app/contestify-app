@@ -12,29 +12,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <!-- General Meta Tags -->
-    <meta name="description" content="Contestify is a productivity tool for competitive programmers. Enhance your coding experience and efficiency.">
+    <meta name="description"
+        content="Contestify is a productivity tool for competitive programmers. Enhance your coding experience and efficiency.">
     <meta name="keywords" content="contestify, productivity, tool, competitive, programming, coding, efficiency">
     <meta name="author" content="Contestify Team">
-    
+
     <!-- Open Graph Meta Tags for social media -->
     <meta property="og:title" content="Contestify | Productivity Tool for Competitive Programmers">
-    <meta property="og:description" content="Contestify is a productivity tool for competitive programmers. Enhance your coding experience and efficiency.">
+    <meta property="og:description"
+        content="Contestify is a productivity tool for competitive programmers. Enhance your coding experience and efficiency.">
     <meta property="og:image" content="https://contestify-app.vercel.app/assets/images/contestify/logo.png">
     <meta property="og:url" content="https://contestify-app.vercel.app">
     <meta property="og:type" content="website">
-    
+
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contestify | Productivity Tool for Competitive Programmers">
-    <meta name="twitter:description" content="Contestify is a productivity tool for competitive programmers. Enhance your coding experience and efficiency.">
+    <meta name="twitter:description"
+        content="Contestify is a productivity tool for competitive programmers. Enhance your coding experience and efficiency.">
     <meta name="twitter:image" content="https://contestify-app.vercel.app/assets/images/contestify/logo.png">
     <meta name="twitter:site" content="@yourtwitterhandle">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/images/contestify/logo.png" type="image/x-icon">
-    
+
     <title>Contestify | Productivity Tool for Competitive Programmers</title>
 
     <!-- Tailwind CSS -->
@@ -97,7 +100,9 @@
                     Contestify assists you in monitoring your programming contests across nearly all platforms.</div>
                 <div
                     class="flex justify-center lg:justify-start xl:justify-start md:justify-start sm:justify-center items-center my-14 gap-4">
-                    <div class="container1 transition-all group duration-300 ease-in-out cursor-pointer">
+                    <!-- <a href="https://github.com/contestify-app/contestify-app" target="_blank"> -->
+                    <div class="container1 transition-all group duration-300 ease-in-out cursor-pointer"
+                        onclick="openLink()">
                         <label class="label">
                             <input class="input" type="checkbox" />
                             <span class="circle">
@@ -105,14 +110,17 @@
                                     aria-hidden="true" class="icon">
                                     <path class="group-hover:!fill-green-500 transition-all duration-300 ease-in-out"
                                         d="M12 19V5m0 14-4-4m4 4 4-4" stroke-width="1.5" stroke-linejoin="round"
-                                        stroke-linecap="round" stroke="currentColor"></path>
+                                        stroke-linecap="round" stroke="currentColor">
+                                    </path>
                                 </svg>
                                 <div class="square"></div>
                             </span>
-                            <p class="title hover:text-green-500 transition-all ease-in-out font-medium">Download</p>
+                            <p class="title hover:text-green-500 transition-all ease-in-out font-medium">Download
+                            </p>
                             <p class="title">Done!</p>
                         </label>
                     </div>
+                    <!-- </a> -->
 
                     <div class="container1 transition-all group duration-300 ease-in-out cursor-pointer">
                         <label class="label w-[13.6rem]">
@@ -490,9 +498,11 @@
             </div>
         </section>
         <!-- FAQ's section-->
-        <section class="min-h-screen flex flex-col items-center justify-center text-center py-10 bg-[#2a2a2a]" id="faqs">
+        <section class="min-h-screen flex flex-col items-center justify-center text-center py-10 bg-[#2a2a2a]"
+            id="faqs">
             <h1 class="text-4xl font-bold my-8">Frequently Asked Questions</h1>
-            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
+            <div
+                class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq1">
                     <p class="font-semibold text-lg">What is the Contestify Extension?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
@@ -501,7 +511,8 @@
                     automatically aggregate contests from supported platforms and display them in a unified list. You
                     can access this list by clicking the Contestify icon in your browser toolbar.</dd>
             </div>
-            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
+            <div
+                class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq2">
                     <p class="font-semibold text-lg">Can I receive notifications for upcoming contests?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
@@ -510,25 +521,30 @@
                     upcoming and ongoing contests. You can customize your notification preferences in the extension
                     settings.</dd>
             </div>
-            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
+            <div
+                class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq3">
                     <p class="font-semibold text-lg">How do I access the leaderboards?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
                 </dt>
-                <dd id="faq3" class=" hidden text-lg font-light mt-6 ">You can access the leaderboards by clicking on the
+                <dd id="faq3" class=" hidden text-lg font-light mt-6 ">You can access the leaderboards by clicking on
+                    the
                     "Leaderboards" tab within the Contestify Extension. This section will show your ranking and
                     performance across different contests and platforms.</dd>
             </div>
-            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
+            <div
+                class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq4">
                     <p class="font-semibold text-lg">How do I subscribe to email updates?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
                 </dt>
-                <dd id="faq4" class=" hidden text-lg font-light mt-6 ">To subscribe to email updates, go to the extension
+                <dd id="faq4" class=" hidden text-lg font-light mt-6 ">To subscribe to email updates, go to the
+                    extension
                     settings and enter your email address in the subscription section. You will receive regular emails
                     with contest reminders and updates.</dd>
             </div>
-            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
+            <div
+                class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq5">
                     <p class="font-semibold text-lg">Is my data secure with Contestify?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
@@ -537,7 +553,8 @@
                     and data security. We do not store your personal information or track your browsing activity beyond
                     the functionality required to deliver contest updates and notifications.</dd>
             </div>
-            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
+            <div
+                class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq6">
                     <p class="font-semibold text-lg">Can I customize the contest notifications?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
@@ -546,7 +563,8 @@
                     notifications you receive. Go to the extension settings to adjust your notification preferences
                     according to your needs.</dd>
             </div>
-            <div class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
+            <div
+                class="QandA text-left bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-10/12 xl:w-8/12 lg:w-8/12 my-2 p-6">
                 <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq7">
                     <p class="font-semibold text-lg">Is Contestify free to use?</p>
                     <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
@@ -612,6 +630,12 @@
         </div>
     </footer>
 
+    <!-- Custom Scripts -->
+    <script>
+        function openLink() {
+            window.open("https://github.com/contestify-app/contestify-app", "_blank");
+        }
+    </script>
     <!-- GSAP Animations -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -638,16 +662,16 @@
             })
         })
         function toggleDropdown(element) {
-        const dd = element.nextElementSibling;
-        const icon = element.querySelector('i');
-        
-        dd.classList.toggle('max-h-0');
-        dd.classList.toggle('max-h-96'); // Adjust this value as needed for full height
-        dd.classList.toggle('opacity-0');
-        dd.classList.toggle('opacity-100');
-        
-        icon.classList.toggle('-rotate-180');
-    }
+            const dd = element.nextElementSibling;
+            const icon = element.querySelector('i');
+
+            dd.classList.toggle('max-h-0');
+            dd.classList.toggle('max-h-96'); // Adjust this value as needed for full height
+            dd.classList.toggle('opacity-0');
+            dd.classList.toggle('opacity-100');
+
+            icon.classList.toggle('-rotate-180');
+        }
     </script>
 </body>
 
