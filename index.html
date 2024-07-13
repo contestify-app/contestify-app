@@ -24,6 +24,7 @@
 
     <!-- Custom Scripts -->
     <script src="/assets/js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/1627768922.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -464,9 +465,61 @@
                 </ul>
             </div>
         </section>
-
-        <!-- Contact Section -->
-        <section class="min-h-screen flex flex-col items-center justify-center text-center p-10 bg-[#2a2a2a]"
+        <!-- FAQ's section-->
+        <section class="min-h-screen flex flex-col items-center justify-center text-center p-10 bg-[#2a2a2a]" id="faqs">
+            <h1 class="text-3xl">FREQUENTLY ASKED QUESTIONS</h1>
+            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+                <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq1">
+                    <p class="font-semibold text-lg">What is the Contestify Extension?</p>
+                    <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
+                </dt>
+                <dd id="faq1" class="hidden text-lg font-light mt-6 ">Once installed, the Contestify Extension will automatically aggregate contests from supported platforms and display them in a unified list. You can access this list by clicking the Contestify icon in your browser toolbar.</dd>
+            </div>
+            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+                <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq2">
+                    <p class="font-semibold text-lg">Can I receive notifications for upcoming contests?</p>
+                    <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
+                </dt>
+                <dd id="faq2" class="hidden text-lg font-light mt-6 ">Yes! Contestify can send you notifications for upcoming and ongoing contests. You can customize your notification preferences in the extension settings.</dd>
+            </div>
+            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+                <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq3">
+                    <p class="font-semibold text-lg">How do I access the leaderboards?</p>
+                    <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
+                </dt>
+                <dd id="faq3" class="hidden text-lg font-light mt-6 ">You can access the leaderboards by clicking on the "Leaderboards" tab within the Contestify Extension. This section will show your ranking and performance across different contests and platforms.</dd>
+            </div>
+            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+                <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq4">
+                    <p class="font-semibold text-lg">How do I subscribe to email updates?</p>
+                    <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
+                </dt>
+                <dd id="faq4" class="hidden text-lg font-light mt-6 ">To subscribe to email updates, go to the extension settings and enter your email address in the subscription section. You will receive regular emails with contest reminders and updates.</dd>
+            </div>
+            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+                <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq5">
+                    <p class="font-semibold text-lg">Is my data secure with Contestify?</p>
+                    <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
+                </dt>
+                <dd id="faq5" class="hidden text-lg font-light mt-6 ">Absolutely. Contestify prioritizes your privacy and data security. We do not store your personal information or track your browsing activity beyond the functionality required to deliver contest updates and notifications.</dd>
+            </div>
+            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+                <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq6">
+                    <p class="font-semibold text-lg">Can I customize the contest notifications?</p>
+                    <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
+                </dt>
+                <dd id="faq6" class="hidden text-lg font-light mt-6 ">Yes, you can customize the frequency and type of notifications you receive. Go to the extension settings to adjust your notification preferences according to your needs.</dd>
+            </div>
+            <div class="QandA bg-[#161616] border-green-500 rounded-xl border-2 min-h-20 w-8/12 my-5 p-6">
+                <dt class="flex justify-between cursor-pointer items-center" aria-controls="faq7">
+                    <p class="font-semibold text-lg">Is Contestify free to use?</p>
+                    <i class="fa-solid fa-angle-up text-green-500 -rotate-180 transition"></i>
+                </dt>
+                <dd id="faq7" class="hidden text-lg font-light mt-6 ">Yes, Contestify is free to use. We aim to provide competitive programmers with the best tools to enhance their contest experience.</dd>
+            </div>
+        </section>
+        
+        <section class="min-h-screen flex flex-col items-center justify-center text-center p-10 bg-[#1a1a1a]"
             id="contact">
             <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
             <form action="#" method="POST" class="w-full max-w-lg">
@@ -531,6 +584,21 @@
             gsap.from("#working ul li", { duration: 1, opacity: 0, y: 50, stagger: 0.2 });
             gsap.from("#contact form", { duration: 1, opacity: 0, y: 50, stagger: 0.2 });
         });
+        
+    </script>
+    <!-- FAQ's script -->
+    <script>
+        const dtele = document.querySelectorAll('dt');
+        dtele.forEach(element => {
+            element.addEventListener('click', ()=>{
+                const ddID = element.getAttribute('aria-controls');
+                const ddelement = document.getElementById(ddID);
+                const ddarrow = element.querySelectorAll('i')[0];
+                
+                ddelement.classList.toggle('hidden');
+                ddarrow.classList.toggle('-rotate-180');
+            })
+        })
     </script>
 </body>
 
